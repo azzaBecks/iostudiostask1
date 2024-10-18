@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Platform Timetable</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span class="classroom">Classroom</span> <br><span class="ioSTUDIOS">ioSTUDIOS</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lessons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Earnings</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-text dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Laura Spencer
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#" id="signout">Sign Out</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="alert alert-info" role="alert">
+            <h5>Setting up your earnings account</h5>
+            <p class="mb-0">You can still set up lessons, once your profile has been be approved, all lessons will be available to all students.</p>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>Timetable</h2>
+            <button class="btn btn-primary">Add Lesson</button>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="timetable-header">Date Range</div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Today</a>
+                    <a href="#" class="list-group-item list-group-item-action">Monday 21st October 2024</a>
+                    <a href="#" class="list-group-item list-group-item-action">Tuesday 22nd October 2024</a>
+                    <a href="#" class="list-group-item list-group-item-action">Wednesday 23rd October 2024</a>
+                    <a href="#" class="list-group-item list-group-item-action">Thursday 24th October 2024</a>
+                    <a href="#" class="list-group-item list-group-item-action">Friday 25th October 2024</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <input type="text" class="form-control mb-3" placeholder="Search">
+                
+                    <div class="lesson-list">
+                        <div class="lesson-container2">
+                            <div class="lesson-item header">
+                                <div>Lesson name</div>
+                                <div>Status</div>
+                                <div>Date</div>
+                                <div>Time</div>
+                                <div>Duration</div>
+                                <div>Progress</div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="lesson-container">
+                        <div class="lesson-item">
+                            <div>Python Basics</div>
+                            <div>Upcoming</div>
+                            <div>2024-10-18</div>
+                            <div>14:00pm</div>
+                            <div>60 min</div>
+                            <div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill" style="width: 0%;"></div>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline">Start Lesson</button>
+                        </div>
+                        <div class="lesson-item">
+                            <div>JavaScript Basics</div>
+                            <div>In Progress</div>
+                            <div>2024-10-17</div>
+                            <div>10:00am</div>
+                            <div>90 min</div>
+                            <div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill" style="width:  50%;"></div>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary">View Lesson</button>
+                        </div>
+                        <div class="lesson-item">
+                            <div>Databases</div>
+                            <div>Completed</div>
+                            <div>2024-10-16</div>
+                            <div>16:00pm</div>
+                            <div>120 min</div>
+                            <div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline">View Lesson</button>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-white py-3" id="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <a class="navbar-brand" href="#">
+                        <span class="footerclassroom">Classroom</span>
+                        <br>
+                        <span class="footerioSTUDIOS">ioSTUDIOS</span>
+                    </a>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-decoration-none">Accessibility</a> | 
+                        &copy; 2023 ioSTUDIOS. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
