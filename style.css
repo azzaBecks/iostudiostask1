@@ -229,3 +229,31 @@
     background-color: var(--primary-color);
     transition: width 0.3s ease;
   }
+  @media (max-width: 991px) {
+    .navbar-nav {
+      flex-direction:row;
+      align-items: center;
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+  
+    .navbar-collapse {
+      flex-direction: column;
+    }
+  
+    .navbar-text {
+      margin-top: 1rem;
+    }
+  
+    .nav-item {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  @media (max-width: 768px) {
+    .lesson-container, .lesson-container2, .btn {
+      font-size: 0.6rem;
+    }
+  }
+  
+  
